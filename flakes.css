@@ -24,6 +24,38 @@
    left: 90px;
    width: 1rem !important;
 }
+
+.hero{
+   position: relative;
+}
+.halfCircle{
+   position: absolute;
+   bottom: 4rem;
+   right: 9rem;
+   width: 1.2rem !important;
+   
+}
+.square{
+   position: absolute;
+   bottom: 8rem;
+   right: 5rem;
+   width: 2.2rem !important;
+   animation-name: spin;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+.wWhite{
+   position: absolute;
+   bottom: 3rem;
+   right: 2rem;
+   width: 2.2rem !important;
+   transform: rotate(105deg);
+
+}
+
+
 .svg{
    width: 2.5rem;
 
