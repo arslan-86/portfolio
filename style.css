@@ -1,0 +1,439 @@
+/* // font-family: 'IBM Plex Mono', monospace; 400 600
+// font-family: 'Poppins', sans-serif; 300 400 500 
+// font-family: 'Roboto', sans-serif; 300 400 500 */
+
+:root {
+   --primary: #03FFC5;
+   --secondary: rgba(175, 175, 175, .2);
+   --tartiary: #191919;
+
+   font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+   color: white;
+   background-color: var(--tartiary);
+   font-family: 'Poppins', sans-serif;
+   line-height: 3rem;
+
+   overflow: none;
+}
+
+h1 {
+   /* font-family: 'IBM Plex Mono', monospace; */
+  text-align: center;
+   font-size: 4rem;
+   font-weight: 400;
+   line-height: 4.5rem;
+   letter-spacing: .3rem;
+   margin-bottom: 0;
+}
+
+h2 {
+   font-weight: 600;
+   line-height: 8rem;
+   font-family: 'IBM Plex Mono', monospace;
+}
+
+h3 {
+   color: #03FFC5;
+   font-size: 3rem;
+   font-weight: 600;
+   font-family: 'IBM Plex Mono', monospace;
+   position: relative;
+   width: max-content;
+}
+h3::after{
+   content: '';
+   position: absolute;
+   
+   bottom:-10px;
+   left: 0;
+
+   width: 100%;
+   height: .6rem;
+   background-color: #03FFC5;
+   outline: none;
+   border-radius: 10rem;
+   /* margin-bottom: 4rem; */
+}
+
+/* for the logo on the top left */
+h4 {
+   font-family: 'IBM Plex Mono', monospace;
+   font-weight: 300;
+   font-size: 2rem;
+   line-height: 4rem;
+}
+
+p{
+   letter-spacing: .1rem;
+
+   text-align:center;
+   font-size: 2rem;
+   font-weight: 300;
+   line-height: 2.5rem;
+}
+
+
+header{
+   padding: 0.8rem 2rem;
+}
+
+
+
+
+nav{
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-between;
+}
+section{
+   padding: 0 2rem;
+   margin-bottom: 8rem;
+}
+.social_icons{
+   /* background-color: var(--secondary); */
+   position: relative;
+   cursor: pointer;
+}
+.social_icons img{
+   border: none;
+   outline: none;
+   margin-right: 1.4rem;
+   color: white;
+   width: 2rem;
+   position: relative;
+
+
+}
+
+.gray__background{
+   position: absolute;
+   top: -10rem;
+   bottom: -2rem;
+   left: -2rem;
+   right: -2rem;
+   /* width: 4rem;
+   height: 4rem; */
+   background-color: var(--secondary);
+}
+
+.hero{
+   padding: 8rem 2rem 0rem 2rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 4rem
+}
+.hero__content{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 3rem;
+}
+
+
+.profile_photo{
+   max-width: 30rem;
+}
+
+.hero__content_buttons{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+
+hr{
+   width: 85%;
+   height: .5rem;
+   background-color: var(--secondary);
+   border: none;
+   border-radius: 2rem;
+   margin: 0rem auto 8rem auto;
+}
+
+
+.skills__content{
+   margin-top: 3rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(40rem, 2fr));
+   gap: 3rem
+}
+
+.skills__content p{
+   font-size: 2rem;
+}
+
+
+.card__container{
+   margin-top: 3rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   place-items: center;
+   gap: 5rem;
+   
+}
+
+.card{
+   max-width: 40rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: .5rem;
+}
+.card__thumbnail{
+   width: 100%;
+   border-radius: 1rem;
+}
+.card__title{
+   font-size: 2.5rem;
+/* width: 100%; */
+}
+.card__desc{
+   /* width: 100%;    */
+   font-size: 1.6rem;
+
+}
+
+.card__buttons{
+   display: flex;
+   gap: 1.5rem;
+}
+
+
+.about{
+   background-color: var(--secondary);
+}
+.about__title{
+   /* margin-top: 2rem; */
+   margin-bottom: 4rem;
+}
+.about__text{
+   
+   font-size: 1.6rem;
+   font-weight: 400;
+   line-height: 3rem;
+
+   text-align: center;
+   width: 80%;
+   max-width: 720px;
+   padding-bottom: 3rem;
+   margin: 0 auto;
+}
+
+
+
+.contact__header{
+   width: 90%;
+   margin: 2rem auto;
+   display: flex;
+   gap: 2rem;
+}
+.contact__header img {
+   border: none;
+   outline: none;
+   /* margin-right: 1.4rem; */
+   color: white;
+   width: 2.5rem;
+}
+.contact__header p{
+   font-size: 1.6rem;
+}
+
+.contact__title{
+   margin-bottom: 4rem;
+}
+
+.to_be_centered{
+   text-align: center;
+}
+.contact__body{
+   width: 90%;
+   margin-inline: auto;
+   /* display: flex; */
+   /* flex-wrap: wrap; */
+}
+
+.to_be_flex{
+   width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input, textarea{
+   width: 100%;
+   font-size: 1.8rem;
+   color: white;
+   background-color: #191919;
+   font-family: 'Poppins', sans-serif;
+   border: 2px solid white;
+   padding: .8rem 1.5rem;
+   border-radius: 15px;
+
+   margin-bottom: 1.5rem;
+}
+
+input::placeholder,textarea::placeholder{
+   color: white;
+   background-color: #191919;
+   font-family: 'Poppins', sans-serif;
+}
+
+input:focus, textarea:focus{
+   border: 2px solid var(--primary);
+   outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+.change_color{
+   color: var(--primary);
+}
+
+.btn{
+   font-family:'Poppins', sans-serif ;
+   font-size: 1.4rem;
+   font-weight: 500;
+   color: var(--tartiary);
+   opacity: .8;
+   background-color: #03FFC5;
+   text-decoration: none;
+   padding: .2rem 1.5rem;
+   border: 3px solid var(--primary);
+   border-radius: 4rem;
+   cursor: pointer;
+   /* margin-right: 1rem; */
+}
+
+.hollow{
+   color: var(--primary);
+   background-color: var(--tartiary);
+}
+
+.btn:hover{
+   opacity: 1;
+}
+
+.hollow:hover{
+   color: var(--tartiary);
+   background-color: var(--primary);
+}
+
+
+.send_btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: .8rem;
+
+   margin: 2rem auto ;
+
+   font-size: 1.8rem;
+   /* font-weight:500; */
+}
+.send_btn img{
+   width: 2rem;
+}
+
+
+footer{
+   text-align: center;
+   padding: 5rem 0;
+}
+
+.footer_icons img{
+   width: 2.5rem;
+   margin-left: 2rem;
+}
+
+
+
+@media (min-width: 470px){
+   h1{
+      font-size: 4.5rem;
+   }
+}
+
+
+
+@media(min-width:920px) {
+ 
+   
+   nav{
+      width: 80%;
+      margin: 0 auto;
+
+      height: 5rem;
+   }
+   
+   .hero{
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      height: 100vh;
+   }
+
+   .hero__content{
+      width: 50rem;
+     align-items: flex-start;
+      /* padding: 0 5rem; */
+   }
+
+   .hero__content_title h1{
+      text-align: left;
+      font-size: 7rem;
+      line-height: 7rem;
+   }
+
+   .hero__content_title img{
+      width: 3rem;
+   }
+   .hero__content_text p{
+      text-align: left;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      font-family: 'Poppins', sans-serif; 
+      font-weight: 300;
+   }
+   
+   .profile_photo{
+      max-width: 50rem;
+   }
+}

@@ -1,0 +1,63 @@
+.hero__content_title{
+   position: relative;
+   
+}
+.triangle{
+   position: absolute;
+   top: -60px;
+   left: 40px;
+   display: block;
+   animation-name: spin;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.w{
+   position: absolute;
+   top: -25px;
+   left: 120px;
+   width: 2rem;
+}
+.circle{
+   position: absolute;
+   top: -40px; 
+   left: 90px;
+   width: 1rem !important;
+}
+.svg{
+   width: 2.5rem;
+
+}
+
+@keyframes spin {
+   from{
+      transform: rotate(0deg);
+   }
+   to{
+      transform: rotate(360deg);
+   }
+}
+
+
+@media (min-width:  920px) {
+   .hero__content_title img{
+      width: 4rem;
+   }
+   .triangle{
+
+      top: -140px;
+      left: 40px;
+    
+   }
+   .circle{
+      top:-100px;
+      left: 130px;
+      width: 2rem !important; 
+   }
+   .w{
+      top: -50px;
+      left: 180px;
+ 
+   }
+  
+}
