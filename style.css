@@ -151,7 +151,7 @@ section{
    align-items: center;
    justify-content: center;
    gap: 4rem;
-   height: 90vh;
+   height: 80vh;
 }
 .hero__content{
    display: flex;
