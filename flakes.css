@@ -1,3 +1,4 @@
+/* hero section flakes */
 .hero__content_title{
    position: relative;
    
@@ -56,6 +57,66 @@
 }
 
 
+
+/* about section flakes */
+.about{
+position: relative;
+}
+.about_square{
+   position: absolute;
+   top: 1rem;
+   right: 3rem;
+
+   transform: rotate(42deg);
+}
+.about_circle {
+   position: absolute;
+   top: -5rem;
+   right: 4rem;
+
+   width: 1.4rem !important;
+}
+.about_xgreen{
+   position: absolute;
+   top: -3rem;
+   right: 1rem;
+
+   width: 1rem !important;
+}
+
+
+
+
+/* contact section flakes */
+
+.contact{
+   position: relative;
+}
+
+.contact_triangle{
+   position:absolute;
+   bottom: -5rem;
+   right: 7rem;
+
+   animation-name: spin;
+   animation-duration: 30s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+.contact_circle{
+   position:absolute;
+   bottom: -1rem;
+   right: 3rem;
+
+   width: 1.5rem !important;
+}
+.contact_w{
+   position:absolute;
+   bottom: -8rem;
+   right: 2rem;
+} 
+
+
 .svg{
    width: 2.5rem;
 
@@ -90,6 +151,29 @@
       top: -50px;
       left: 180px;
  
+   }
+   .halfCircle{
+      position: absolute;
+      bottom: 8rem;
+      right: 10rem;
+      width: 2rem !important;
+      
+   }
+   .square{
+      position: absolute;
+      bottom: 15rem;
+      right: 5rem;
+      width: 4rem !important;
+      
+   }
+   
+   .wWhite{
+      position: absolute;
+      bottom: 5rem;
+      right: -4rem;
+      width: 4rem !important;
+      transform: rotate(105deg);
+   
    }
   
 }
