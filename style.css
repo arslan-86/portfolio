@@ -151,7 +151,7 @@ section{
    align-items: center;
    justify-content: center;
    gap: 4rem;
-   height: 80vh;
+   height: 90vh;
 }
 .hero__content{
    display: flex;
@@ -202,7 +202,7 @@ hr{
 .card__container{
    margin-top: 3rem;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
    place-items: center;
    gap: 5rem;
    
@@ -219,7 +219,7 @@ hr{
 }
 .card__thumbnail{
    width: 100%;
-   border-radius: 1rem;
+   border-radius: .6rem;
 }
 .card__title{
    font-size: 2.5rem;
@@ -416,9 +416,87 @@ footer{
    }
 }
 
+@media (min-width: 920px) {
+   nav{
+      width: 80%;
+      margin: 0 auto;
+
+      height: 5rem;
+   }
+
+   section{
+      width: 80%;
+      margin-inline: auto;
+      margin-bottom: 20rem;
+      padding-inline: 0;
+   }
+   
+   .hero{
+      padding: 0;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      height: 92vh;
+
+      
+   }
+
+   .hero__content{
+      width: 50rem;
+     align-items: flex-start;
+      /* padding: 0 5rem; */
+   }
+
+   .hero__content_title h1{
+      text-align: left;
+      font-size: 5rem;
+      line-height: 7rem;
+   }
+
+   .hero__content_title img{
+      width: 3rem;
+   }
+   .hero__content_text p{
+      text-align: left;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      font-family: 'Poppins', sans-serif; 
+      font-weight: 300;
+   }
+   
+   .hero__image{
+      display: block;
+   }
+   .profile_photo{
+      max-width: 40rem;
+   }
 
 
-@media(min-width:920px) {
+   /* .card__container{
+      margin-top: 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      place-items: center;
+      gap: 5rem;
+      
+   } */
+
+   .card{
+      width: 90%;
+      /* max-width: 50rem; */
+   }
+   .about{
+      width: 100%;
+      padding-inline: 15rem;
+   }
+   .about__profile_photo{
+      display: none;
+   }
+   
+}
+
+@media(min-width:1400px) {
  
    
    nav{
