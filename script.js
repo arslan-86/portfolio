@@ -30,7 +30,7 @@ submitBtn.addEventListener('click', (e) => {
       Subject: "Email From Website",
       Body: body
    }).then(
-      message => {
+      res => {
          alertTitle.innerText = 'Thank you for reaching me out'
          alertBody.innerText = "I'll get back to you shortly."
          alertBox.style.display = 'block';

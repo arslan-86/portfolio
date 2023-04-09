@@ -523,14 +523,14 @@ footer{
    }
 
 
-   /* .card__container{
+   .card__container{
       margin-top: 3rem;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
       place-items: center;
       gap: 5rem;
       
-   } */
+   }
 
    .card{
       width: 90%;
@@ -544,11 +544,11 @@ footer{
       display: none;
    }
 
-   .thank_you_box{
+   /* .thank_you_box{
       position: absolute;
       top: 90%;
       left: 30%;
-   }
+   } */
    
 }
 
