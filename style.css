@@ -296,6 +296,41 @@ hr{
    width: 100%;
 }
 
+.contact_alert_container{
+   position: relative;
+}
+
+
+
+.thank_you_box{
+   display: none;
+   transform: translateY(-210%);
+  padding: 1rem 2rem;
+  max-width: 50rem;
+  background-color: black;
+  border-radius: 2rem;
+}
+.thank_you_box h2{
+   color: #03FFC5;
+   font-size: 2.5rem;
+   line-height: 1;
+   margin-bottom: 1rem;
+}
+.thank_you_box p{
+   text-align: left;
+}
+.thank_you_box button{
+   display: block;
+   margin: 1.5rem auto;
+   font-size: 2rem;
+   color: white;
+   background-color: rgb(255, 44, 44);
+   outline: none;
+   border: none;
+   border-radius: .5rem;
+   padding: .4rem 2rem;
+}
+
 
 
 
@@ -378,6 +413,14 @@ input:focus, textarea:focus{
    color: var(--tartiary);
    background-color: var(--primary);
 }
+.disable{
+   opacity: .3;
+   cursor:not-allowed;
+}
+.disable:hover{
+   opacity: .3;
+   cursor:not-allowed;
+}
 
 
 .send_btn{
@@ -394,6 +437,8 @@ input:focus, textarea:focus{
 .send_btn img{
    width: 2rem;
 }
+
+
 
 
 footer{
@@ -413,6 +458,11 @@ footer{
 @media (min-width: 470px){
    h1{
       font-size: 4.5rem;
+   }
+   .thank_you_box{
+      position: absolute;
+      top: 90%;
+      left: 10%;
    }
 }
 
@@ -492,6 +542,12 @@ footer{
    }
    .about__profile_photo{
       display: none;
+   }
+
+   .thank_you_box{
+      position: absolute;
+      top: 90%;
+      left: 30%;
    }
    
 }
@@ -595,5 +651,10 @@ footer{
    .contact__body input{
       padding: 2rem;
       /* margin-bottom: 3rem; */
+   }
+   .thank_you_box{
+      position: absolute;
+      top: 100%;
+      left: 35%;
    }
 }
